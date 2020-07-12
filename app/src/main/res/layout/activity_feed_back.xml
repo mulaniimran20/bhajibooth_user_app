@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity.FeedBackActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="18dp"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBalck"
+                    android:text="Please take a minute to write a review" />
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:theme="@style/customRatingBar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColorHint="@color/colorGrey">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="Type feedback.."
+                        android:textColor="@color/colorBalck"
+                        android:minLines="10"
+                        android:padding="5dp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/btn_submit"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/rounded_green2"
+                android:padding="5dp"
+                android:gravity="center"
+                android:textSize="21dp"
+                android:layout_gravity="bottom|center"
+                android:text="Submit"
+                android:elevation="5dp"
+                android:textColor="@color/colorWhite" />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activity.SingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/ed_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_editetext"
+                android:hint="Name"
+                android:padding="10dp"
+                android:textColor="@color/colorGrey2" />
+
+
+            <EditText
+                android:id="@+id/ed_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_editetext"
+                android:hint="Address Type"
+                  android:padding="10dp"
+                android:textColor="@color/colorGrey2" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ed_hoousno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/rounded_editetext"
+                    android:hint="Home No"
+                      android:padding="10dp"
+                    android:textColor="@color/colorGrey2" />
+
+
+                <EditText
+                    android:id="@+id/ed_society"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_editetext"
+                    android:hint="Society"
+                      android:padding="10dp"
+                    android:textColor="@color/colorGrey2" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="2dp"
+                android:text="Area"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rounded_editetext">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:prompt="@string/spinner_title" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ed_landmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_editetext"
+                android:hint="Landmark"
+                  android:padding="10dp"
+                android:textColor="@color/colorGrey2" />
+
+
+            <EditText
+                android:id="@+id/ed_pinno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/rounded_editetext"
+                android:hint="Pincode"
+                android:inputType="number"
+                android:maxLength="6"
+                  android:padding="10dp"
+                android:textColor="@color/colorGrey2" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:elevation="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/rounded_green"
+                    android:text="Save"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

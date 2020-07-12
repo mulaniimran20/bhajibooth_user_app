@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "37480617602",
+    "firebase_url": "https://bhaji-booth.firebaseio.com",
+    "project_id": "bhaji-booth",
+    "storage_bucket": "bhaji-booth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37480617602:android:06e6c92fba3e1c3eccc69b",
+        "android_client_info": {
+          "package_name": "com.example.bhajibooth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37480617602-c5gr504b3vq7jmq1delndgum2ld6ackh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIvHJxAYJ9LaZiSzrQhRdW37K3FEH0AKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37480617602-c5gr504b3vq7jmq1delndgum2ld6ackh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

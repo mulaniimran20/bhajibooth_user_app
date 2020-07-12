@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.CategoryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txt_titel"
+        android:padding="5dp"
+        android:textSize="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/colorBalck"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/coresans_cr_medium"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

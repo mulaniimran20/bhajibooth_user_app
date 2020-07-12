@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_otp_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coresans_cr_medium"
+            android:gravity="center"
+            android:text="Enter OTP"
+            android:textColor="@color/colorGrey1"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/coresans_cr_medium"
+            android:gravity="center"
+            android:text="* * * * * *"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/txt_mob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/coresans_cr_medium"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorGrey2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="44dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textColorHint="@color/colorGrey"
+                        android:visibility="visible">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_otp1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:gravity="center"
+                            android:maxLength="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGrey2" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="44dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textColorHint="@color/colorGrey"
+                        android:visibility="visible">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_otp2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="1"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:inputType="number"
+                            android:textColor="@color/colorGrey2" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="44dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textColorHint="@color/colorGrey"
+                        android:visibility="visible">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_otp3"
+                            android:layout_width="match_parent"
+                            android:maxLength="1"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:inputType="number"
+                            android:textColor="@color/colorGrey2" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="44dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textColorHint="@color/colorGrey"
+                        android:visibility="visible">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_otp4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="1"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:inputType="number"
+                            android:textColor="@color/colorGrey2" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="44dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textColorHint="@color/colorGrey"
+                        android:visibility="visible">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_otp5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="1"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:inputType="number"
+                            android:textColor="@color/colorGrey2" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="44dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:textColorHint="@color/colorGrey"
+                        android:visibility="visible">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ed_otp6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="1"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:inputType="number"
+                            android:textColor="@color/colorGrey2" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/btn_send"
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded_green2"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textColor="@color/colorWhite" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="Dia not receive the code?"
+            android:textColor="@color/colorGrey2" />
+
+        <TextView
+            android:id="@+id/btn_reenter"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Re-Send"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/btn_timer"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:elevation="10dp"
+            android:gravity="center"
+            android:text="30"
+            android:textColor="@color/colorGrey2" />
+
+    </LinearLayout>
+
+
+</ScrollView>
